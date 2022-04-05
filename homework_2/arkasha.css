@@ -1,0 +1,47 @@
+.fon{
+    background: white;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.tab{
+    height: 80%;
+    width: 200px;
+    background: silver;
+    border: 2px solid black;
+
+
+}
+p{
+    font-size: 40px;
+
+}
+.te1{
+
+text-align: center;
+ padding-top: 20px;
+
+}
+.te2{display: flex;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+
+}
+.te3{
+    border: 2px solid black;
+    height: 30px;
+    width: 130px;
+font-size: 20px;
+    display: flex;
+  justify-content: center;
+    background: white;
+
+    margin-top: 25px;
+    margin-left: 35px;
+}

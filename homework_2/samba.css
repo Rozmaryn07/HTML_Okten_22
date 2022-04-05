@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+.r{background: lightgreen;
+    text-align: center;
+    font-size: 40px;
+}
+.batya{
+    height: 500px;
+    background: lightgreen;
+    display: flex;
+    justify-content:center;
+
+}
+.box{
+    height: 350px;
+    width: 300px;
+    background: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+margin: 10px;
+
+
+
+}
+.fa-solid{
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.p{font-size: 30px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;}
+.text{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bord{
+margin: 20px 75px 20px 75px;
+    font-size: 30px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+
+}
