@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    margin-top: 100px;
+    justify-content:center;
+}
+.korob {
+    width: 300px;
+    height: 320px;
+    background: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 15px;
+
+}
+.zah {
+    font-size: 25px;
+    margin-top: 65px;
+    margin-bottom: 5px;
+    text-align: center;
+
+
+
+}
+.textylya{
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #5f5b5b;
+
+}
+.box-bord{
+    border: 2px solid black;
+    font-size: 20px;
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    margin: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.colo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background:white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:-50px;
+    left: calc(300px/2 - 50px);
+
+
+}
+.fa-solid{
+    font-size: 40px;
+    color: #ec9114;
+    /*display: flex;*/}
