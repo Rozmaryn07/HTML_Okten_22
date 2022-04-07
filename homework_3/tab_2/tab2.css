@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.fon1{
+    height: 200px;
+    width: 600px;
+    background: navy;
+    /*position:relative;*/
+    display: flex;
+    justify-content:center;
+
+}
+.rom{
+    display: flex;
+    padding-top: 165px;
+}
+.fon2{
+    height: 200px;
+    width: 600px;
+    background: #d5ca18;
+
+}
+.kwadr{
+    width: 60px;
+    height: 60px;
+    background: darkviolet;
+    border-radius: 5px;
+    margin: 5px;
+    bottom: 30px;
+    z-index: 1;
+
+}
