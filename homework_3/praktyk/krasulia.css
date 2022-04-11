@@ -1,0 +1,112 @@
+
+.holova{
+    height: 960px;
+    width: 700px;
+
+
+}
+.header {
+    height: 40px;
+    width: 700px;
+    background: #24575f;
+    display: flex;
+    /*margin: 2px;*/
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center
+
+
+
+
+}
+p{margin: 0}
+.Bbox{
+    display: flex;
+    /*box-sizing: border-box;*/
+    /*column-gap: 2px;*/
+    /*row-gap: 2px;*/
+    grid-gap: 5px;
+
+}
+.mbox1{
+    height: 400px;
+    width: 250px;
+    /*background: #77558b;*/
+    /*margin: 2px;*/
+
+}
+.sbox1{
+    height: 150px;
+    background: #77558b;
+    /*margin: 2px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sbox2{
+    height: 250px;
+    background: lightgreen;
+    /*margin: 2px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mbox2{
+    height: 400px;
+    width: 450px;
+    background: #ec9114;
+    /*margin: 2px;   !*box-sizing: border-box;*!*/
+
+
+
+}
+.sbox3{
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    /*display: flex;*/
+    /*box-sizing: border-box;*/    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sbox4{
+    height: 100px;
+    background: #5f5b5b;    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Sbox{
+    height: 80px;
+    width: 700px;
+    /*background: forestgreen;*/
+    display: flex;
+    /*box-sizing: border-box;*/
+    column-gap: 2px;
+    row-gap: 2px;
+
+}
+.Footer{
+    height: 40px;
+    width: 700px;
+    background: #f67402;    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sb1{
+    width: 70%;
+    /*margin: 2px;*/
+    background: forestgreen;    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sb2{
+    width: 30%;
+    background: coral;
+    /*margin: 2px;    display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+/** {margin: 1px}*/
