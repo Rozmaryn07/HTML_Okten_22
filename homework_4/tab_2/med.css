@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+
+.b12{height:50px;
+display: flex
+}
+    .a1{
+        width: 25%;
+        background: midnightblue;}
+
+
+    .a2{width: 75%}
+
+.b3456789{
+    height: 400px;
+    background: silver;
+    display: flex;
+}
+.b389{
+    width: 25%;
+    background: #ec9114;
+    height: 100%;
+}
+.b3{
+    height: 66.6%;
+}
+.b89{
+    height: 33.3%;
+    background: black;
+    /*display: flex;*/
+
+}
+.b8{
+    height: 50%;
+}
+
+.b9{
+    height: 50%;
+    background: silver;
+}
+.b4567{
+    width: 75%;
+    background: #77558b;
+}
+.b45{
+    height: 33.3%;
+    background: #d5ca18;
+    display:flex;
+}
+.b67{
+    height: 66.6%;
+    display: flex;
+}
+.b10{
+    height: 100px;
+    background: midnightblue;
+}
+
+.b4{
+    width: 75%;
+background: greenyellow;
+}
+.b5{
+    width: 25%;
+}
+.b6{
+    width: 75%
+}
+.b7{
+    width: 25%;
+    background: blanchedalmond;
+}

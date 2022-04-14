@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+.BOX{
+height: 500px;
+
+}
+.a{
+    height: 33.3%;
+    background: #77558b;
+    /*margin: 5px;*/
+}
+.bh{
+    height: 66.6%;
+    display: flex;
+    /*!*column-gap: 5px;*!   margin: 5px;*/
+    /*row-gap: 5px;*/
+}
+.bg{
+    width: 75%;
+    background: white;
+
+
+
+
+}
+.bd{
+    height: 50%;
+    display: flex;
+    /*column-gap: 5px;*/
+    /*row-gap: 5px;*/
+    /*padding: 5px;*/
+    /*box-sizing: border-box;*/
+}.eg{
+    height: 50%;
+    display: flex;
+     /*column-gap: 5px;*/
+     /*!*row-gap: 5px;*!padding: 5px;*/
+     /*box-sizing: border-box;*/
+}
+.b{
+    width: 33.3%;
+    background: forestgreen;
+   margin: 5px;
+    box-sizing: border-box;
+}
+.h{
+    width: 25%;
+    background: #ec9114;
+}

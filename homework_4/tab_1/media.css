@@ -1,0 +1,21 @@
+@media screen and (max-width: 500px){
+    .bh{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .BOX{
+        width: 100vm;
+    }
+    .a{
+        height: 10vh ;
+    }
+    .bg{
+        height: 33.3vh;
+        width: 100vw;
+    }
+    .h{
+        height: 33.3vh;
+        width: 100vw;
+    }
+}
