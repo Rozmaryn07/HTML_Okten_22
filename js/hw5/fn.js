@@ -1,28 +1,33 @@
 // Все стірлочними!!!!!!!!!
 //     - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
-// let ar = [4,6 ,7,8,9,33,44,555,66,1,899];
-// let ser = (array) =>{
-//     let su = 0;
-//     for (const argument of array ) {
-// su+= argument;
-//     }
-//     return su/2
-// };
-// console.log(ser(ar))
+let ar = [4,6 ,7,8,9,33,44,555,66,1,899];
+let ser = (array) =>{
+    let su = 0;
+    for (const argument of array ) {
+su+= argument;
+    }
+    return su/array.length
+};
+console.log(ser(ar))
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
 // (Math використовувати заборонено);
-let ar = [4,6 ,7,8,9,33,-44,555,-66,1,899];
-let ser = (array) => {
-    let men = 0;
-    let bi = 0;
-    for (const argument of array) {
-            if (men > argument){men = argument}
-        }return document.write(men);
-     if ( bi < argument){bi = argument}
-    return console.log(bi)
-}
-ser(ar)
+// let ar = [4,6 ,7,8,9,33,-44,555,-66,1,899];
+// let ser = (array) => {
+//     let men = 0;
+//     let bi = 0;
+//     for (const argument of array) {
+//         if (men > argument) {
+//             men = argument
+//         }
+//
+//         if (bi < argument) {
+//             bi = argument
+//         }
+//     }
+//     return console.log(bi)
+// }
+// ser(ar)
 
 // - створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
