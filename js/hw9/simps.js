@@ -138,5 +138,28 @@ let coursesArray = [
         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
     }
 ];
-// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
+// Створити для кожного елементу масиву свій блок, блок розділити блоками,
+// в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
+for (const coursesArrayElement of coursesArray) {
+    let block = document.createElement('div');
+    document.body.appendChild(block);
+    const tit =document.createElement('div');
+    tit.innerText = `${coursesArrayElement.title}`;
+    const month = document.createElement('div');
+    month.innerText = `${coursesArrayElement.monthDuration}`;
+    const hour = document.createElement('div');
+    hour.innerText = `${coursesArrayElement.hourDuration}`;
+    const mod = document.createElement('div');
+    // mod.innerText = `${coursesArrayElement.modules}`;
+    for (const modKey of coursesArrayElement.modules) {
+        const modk = document.createElement('li');
+        modk.innerText = `${modKey}`;
+        mod.appendChild(modk);
+    }
+block.appendChild(tit);
+block.appendChild(month);
+block.appendChild(hour);
+block.appendChild(mod);
+
+}
