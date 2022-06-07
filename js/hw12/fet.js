@@ -43,3 +43,50 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 //             document.body.appendChild(wraper);
 //         }
 //     })
+
+
+
+const puk = document.createElement('a',target="_blank");
+puk.innerHTML = '<input type="button" value=puk>';
+puk.setAttribute('href',`https://jsonplaceholder.typicode.com/users/${valueElement.id}` );
+div.appendChild(puk);
+}
+
+// const usrdiv = document.getElementsByClassName('usrdiv')[0];
+// const but = document.getElementsByTagName('button')[0];
+// but.addEventListener('click',()=> {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//         .then(response=> response.json())
+//         .then(value => {
+//             for (const valueElement of value) {
+//                 const div = document.createElement('div');
+//                 div.classList.add('div');
+//                 div.innerHTML = `${valueElement.id} - ${valueElement.name}`;
+//                 usrdiv.appendChild(div);
+//                 const puk = document.createElement('a',target="_blank");
+//                 puk.innerHTML = '<input type="button" value=puk>';
+//                 puk.setAttribute('href',`https://jsonplaceholder.typicode.com/users/${valueElement.id}` );
+//                 div.appendChild(puk);
+//             }
+//         })
+// })
+const post = document.createElement('a',target="_blank");
+post.innerHTML = '<input type="button" value="post of current user">';
+post.setAttribute('href',`https://jsonplaceholder.typicode.com/users/${id}/posts` );
+div.appendChild(post);
+
+
+const Pdetailkey = 'Postdetail';
+const detailpost = document.getElementById('detail');
+const parsepodt = JSON.parse(localStorage.getItem(Pdetailkey));
+parsepodt.forEach(post =>{
+    const postdiv= document.createElement('div');
+
+    const cont = document.createElement('div');
+    cont.innerText =
+        `userId: ${post.userId}
+        id: ${post.id}
+        title: ${post.title}
+        body: ${post.body}`;
+    postdiv.append(cont);
+    detailpost.append(postdiv);
