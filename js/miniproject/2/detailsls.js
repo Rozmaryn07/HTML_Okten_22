@@ -7,29 +7,33 @@
 
 
 const detdiv = document.getElementsByClassName('det')[0];
-fetch(`https://jsonplaceholder.typicode.com/users`)
+const Userdetails = JSON.parse(localStorage.getItem('Userdetails'));
+fetch(Userdetails)
     .then(response=> response.json())
     .then(value =>{
-        for (const valueElement of value) {
             const div = document.createElement('div');
             div.classList.add('div');
             detdiv.appendChild(div);
-            const {id, name, username, email, address, phone, website, company } = valueElement;
-                div.innerHTML =   `<h2> ${id}<h2>
-   <h2>${name}</h2>
-  <h2>${username}</h2>
-   <h2>${email}</h2>
-    <h2>${address.street}</h2> 
-  <h2>${address.suite}</h2>
-   <h2>${address.city}</h2>
-    <h2>${address.zipcode}</h2>
-    <h2>${address.geo.lat}</h2>
-    <h2>${address.geo.lng}</h2>
-  <h2>${phone}</h2>
-   <h2>${website}</h2>
-    <h2>${company.name}</h2>
-    <h2>${company.catchPhrase}</h2>
-      <h2>${company.bs}</h2>`
+            const {id, name, username, email, address, phone, website, company } = value;
+
+
+                div.innerHTML = `
+ <h2> ${id}<h2>
+ <h2>${name}</h2>
+ <h2>${username}</h2>
+ <h2>${email}</h2>
+ <h2>${address.street}</h2>
+ <h2>${address.suite}</h2>
+ <h2>${address.city}</h2>
+ <h2>${address.zipcode}</h2>
+ <h2>${address.geo.lat}</h2>
+ <h2>${address.geo.lng}</h2>
+ <h2>${phone}</h2>
+ <h2>${website}</h2>
+ <h2>${company.name}</h2>
+ <h2>${company.catchPhrase}</h2>
+ <h2>${company.bs}</h2>
+`
 
                 const button = document.createElement('button');
                 button.innerText = 'post of current user'
@@ -65,5 +69,5 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
 
                         })
                 }
-        }
+
     })
