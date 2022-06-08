@@ -55,6 +55,8 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
                                     const Pdetailkey = 'Postdetail';
                                     localStorage.setItem(Pdetailkey,JSON.stringify(`https:jsonplaceholder.typicode.com/posts/${post.id}`) )
                                     JSON.parse(localStorage.getItem(Pdetailkey));
+                                    const Comdet = 'Comdet'
+                                    localStorage.setItem(Comdet,JSON.stringify(`https:jsonplaceholder.typicode.com/posts/${post.id}/comments`))
 
                                 }
                                 postdetdiv.appendChild(puk);
