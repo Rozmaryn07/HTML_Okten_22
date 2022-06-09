@@ -1,0 +1,31 @@
+.det {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: darkblue solid 3px;
+    /*height: 50%;*/
+    background: #9cf502;
+}
+.but {
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.postdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4px;
+    border: black solid 4px;
+}
+.onetitle {
+    border: #f67402 solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18%;
+    height: 100px;
+    margin: 2px;
+
+}
