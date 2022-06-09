@@ -18,35 +18,41 @@ fetch(Userdetails)
 
 
                 div.innerHTML = `
- <h2> ${id}<h2>
- <h2>${name}</h2>
- <h2>${username}</h2>
- <h2>${email}</h2>
- <h2>${address.street}</h2>
- <h2>${address.suite}</h2>
- <h2>${address.city}</h2>
- <h2>${address.zipcode}</h2>
- <h2>${address.geo.lat}</h2>
- <h2>${address.geo.lng}</h2>
- <h2>${phone}</h2>
- <h2>${website}</h2>
- <h2>${company.name}</h2>
- <h2>${company.catchPhrase}</h2>
- <h2>${company.bs}</h2>
+ <h2>Id: ${id}<h2>
+ <h2>name: ${name}</h2>
+ <div>username: ${username}</div>
+ <div>email: ${email}</div>
+ <h2>ADDRESS</h2>
+ <div>street: ${address.street}</div>
+ <div>suite: ${address.suite}</div>
+ <div>city: ${address.city}</div>
+ <div>zipcode: ${address.zipcode}</div>
+ <h2>ADDRESS.Geo</h2>
+ <div>lat: ${address.geo.lat}</div>
+ <div>lng: ${address.geo.lng}</div>
+ <div>phone: ${phone}</div>
+ <div>website: ${website}</div>
+ <h2>Company</h2>
+ <div>name: ${company.name}</div>
+ <div>catchPhrase: ${company.catchPhrase}</div>
+ <div>bs: ${company.bs}</div>
 `
 
                 const button = document.createElement('button');
+                button.setAttribute('class', 'but')
                 button.innerText = 'post of current user'
-                div.appendChild(button);
+                detdiv.appendChild(button);
 
                 button.onclick = () => {
                     fetch(`https:jsonplaceholder.typicode.com/users/${id}/posts`)
                         .then(value => value.json() )
                         .then(value => {
                             const postdiv = document.createElement('div');
+                            postdiv.setAttribute('class', 'postdiv')
                             div.appendChild(postdiv);
                             for (const post of value) {
                              const postdetdiv = document.createElement('div');
+                             postdetdiv.setAttribute('class', 'onetitle')
                              postdetdiv.innerText = `title${post.id}: ${post.title}`;
                              postdiv.appendChild(postdetdiv);
                              button.disabled = true;

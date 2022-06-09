@@ -1,0 +1,32 @@
+/*<!--index.html - все блоки с user - по 2 в ряд. кнопки/ссылки находяться под информацией про user.-->*/
+/*<!--Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так,*/
+/*    что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка-->*/
+
+body {
+    display: flex;
+    /*justify-content: center;*/
+}
+.usrdiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*width: 800px;*/
+
+
+}
+
+.div {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    height: 50px;
+    background: blanchedalmond;
+    margin: 2px;
+    border: #884d8b solid 2px ;
+}
+
+.button {
+
+    /*background: cornflowerblue;*/
+}

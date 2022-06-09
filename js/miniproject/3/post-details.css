@@ -1,0 +1,30 @@
+/*<!--post-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.-->*/
+/*<!--Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так,*/
+/*    что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка-->*/
+
+.detail {
+    display: flex;
+    flex-direction: column;
+
+}
+.postdiv {
+    display: flex;
+    justify-content: space-around;
+    background: wheat;
+    border: #ac9d80 solid 3px;
+    align-items: center;
+}
+.comdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #dc9090;
+    border: #573a3a solid 3px;
+
+}
+.coment {
+    width: 21%;
+    border: #f14b4b solid 2px;
+    padding: 10px;
+    margin: 3px;
+}

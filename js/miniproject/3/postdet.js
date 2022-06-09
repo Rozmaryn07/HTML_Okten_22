@@ -26,14 +26,13 @@ detailpost.append(comentdiv);
         .then(value => {
 
             for (const com of value) {
-                // const {postId, id, name, email,body} = com;
                 const coment = document.createElement('div');
                 coment.classList.add('coment');
                 comentdiv.append(coment);
                 for (const comentKey in com) {
                     const elementcom = document.createElement('div');
                     elementcom.innerHTML =`${comentKey}  -  ${com[comentKey]}`
-                    comentdiv.append(elementcom);
+                    coment.append(elementcom);
                 }
 
             }
